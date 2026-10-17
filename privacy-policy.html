@@ -11,14 +11,18 @@
         --muted: #555;
         --bg: #faf8f4;
         --card: #fff;
-        --accent: #073928;
+        --heading: #073928;
+        --link: #0a6b4a;
       }
       @media (prefers-color-scheme: dark) {
         :root {
           --text: #e8e6e1;
-          --muted: #a8a6a0;
+          --muted: #b8b6b0;
           --bg: #0e1a16;
           --card: #152620;
+          --heading: #f2f7f4;
+          --link: #7ddeb8;
+          --border: rgba(255, 255, 255, 0.12);
         }
       }
       * {
@@ -43,7 +47,7 @@
       }
       h1 {
         font-size: 1.5rem;
-        color: var(--accent);
+        color: var(--heading);
         margin-top: 0;
       }
       h2 {
@@ -62,7 +66,10 @@
         margin-right: 1rem;
       }
       a {
-        color: var(--accent);
+        color: var(--link);
+      }
+      a:hover {
+        text-decoration: underline;
       }
       ul {
         padding-left: 1.25rem;
@@ -70,7 +77,7 @@
       #contact {
         margin-top: 2rem;
         padding-top: 1.25rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid var(--border, rgba(0, 0, 0, 0.1));
       }
       [dir='rtl'] {
         font-family: system-ui, 'Segoe UI', 'Noto Naskh Arabic', 'Traditional Arabic', sans-serif;
