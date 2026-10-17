@@ -3,11 +3,249 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fawz — Legal</title>
-    <meta http-equiv="refresh" content="0; url=privacy-policy.html" />
-    <link rel="canonical" href="privacy-policy.html" />
+    <title>Fawz (فوز) — Quran, Prayer &amp; Daily Worship</title>
+    <meta
+      name="description"
+      content="Fawz is a calm Islamic companion: Quran mushaf and audio, prayer times, adhkar, hadith, Qibla, and learning — verified sources, Arabic and English." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --text: #1a1a1a;
+        --muted: #555;
+        --bg: #faf8f4;
+        --card: #fff;
+        --heading: #073928;
+        --link: #0a6b4a;
+        --accent-soft: rgba(7, 57, 40, 0.08);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #e8e6e1;
+          --muted: #b8b6b0;
+          --bg: #0e1a16;
+          --card: #152620;
+          --heading: #f2f7f4;
+          --link: #7ddeb8;
+          --accent-soft: rgba(125, 222, 184, 0.12);
+          --border: rgba(255, 255, 255, 0.12);
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+          sans-serif;
+        line-height: 1.55;
+        color: var(--text);
+        background: var(--bg);
+        padding: 1.25rem 1.25rem 2.5rem;
+      }
+      .wrap {
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+      header {
+        text-align: center;
+        padding: 2rem 0 1.5rem;
+      }
+      .logo {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 1rem;
+        border-radius: 18px;
+        background: var(--accent-soft);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo svg {
+        width: 44px;
+        height: 44px;
+      }
+      h1 {
+        font-size: 1.75rem;
+        color: var(--heading);
+        margin: 0 0 0.35rem;
+        letter-spacing: -0.02em;
+      }
+      .tagline {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin: 0;
+      }
+      .tagline-ar {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        direction: rtl;
+        font-family: system-ui, 'Segoe UI', 'Noto Naskh Arabic', 'Traditional Arabic', sans-serif;
+      }
+      main section {
+        background: var(--card);
+        border-radius: 12px;
+        padding: 1.5rem 1.35rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      }
+      h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+        margin: 0 0 1rem;
+        font-weight: 600;
+      }
+      ul.features {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      ul.features li {
+        padding: 0.45rem 0 0.45rem 1.5rem;
+        position: relative;
+      }
+      ul.features li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.85rem;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--link);
+      }
+      .pillars {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.25rem;
+      }
+      .pill {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--heading);
+      }
+      @media (prefers-color-scheme: dark) {
+        .pill {
+          color: var(--text);
+        }
+      }
+      .stores {
+        text-align: center;
+      }
+      .stores p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .store-badges {
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+        align-items: center;
+      }
+      .store-badge {
+        display: inline-block;
+        min-width: 200px;
+        padding: 0.65rem 1.25rem;
+        border-radius: 10px;
+        background: var(--heading);
+        color: var(--bg);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      @media (prefers-color-scheme: dark) {
+        .store-badge {
+          background: #2a4a3d;
+          color: #f2f7f4;
+        }
+      }
+      .store-badge.muted {
+        opacity: 0.55;
+        pointer-events: none;
+        cursor: default;
+      }
+      footer {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      footer a {
+        color: var(--link);
+        margin: 0 0.5rem;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <p><a href="privacy-policy.html">Fawz Privacy Policy</a></p>
+    <div class="wrap">
+      <header>
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24 6L8 14v12c0 9.5 6.8 18.4 16 20 9.2-1.6 16-10.5 16-20V14L24 6z"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="var(--accent-soft)" />
+            <path
+              d="M24 14v20M18 20h12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+        <h1>Fawz <span lang="ar">فوز</span></h1>
+        <p class="tagline">Quran, prayer, and daily worship — calm and trustworthy.</p>
+        <p class="tagline-ar">رفيق إسلامي هادئ: قرآن، صلاة، أذكار وتعلّم بمصادر موثوقة.</p>
+      </header>
+
+      <main>
+        <section aria-labelledby="features-heading">
+          <h2 id="features-heading">What you get</h2>
+          <ul class="features">
+            <li>Madinah mushaf reader, tafsir, and mp3quran.net audio with ayah sync</li>
+            <li>Prayer times, Qibla, adhan reminders, and home screen widgets</li>
+            <li>Hisn al-Muslim adhkar, hadith collections, IslamHouse library, and Islamic radio</li>
+            <li>Tajweed lessons, recitation practice, and a short knowledge quiz</li>
+            <li>Arabic and English UI — no ads, no AI fatwas, no social feed</li>
+          </ul>
+          <div class="pillars" aria-label="Highlights">
+            <span class="pill">Quran</span>
+            <span class="pill">Salah</span>
+            <span class="pill">Adhkar</span>
+            <span class="pill">Hadith</span>
+            <span class="pill">Qibla</span>
+          </div>
+        </section>
+
+        <section class="stores" aria-labelledby="download-heading">
+          <h2 id="download-heading">Download</h2>
+          <p>Mobile apps are rolling out on the App Store and Google Play.</p>
+          <div class="store-badges">
+            <span class="store-badge muted" title="Add your App Store link when live">App Store — coming soon</span>
+            <span class="store-badge muted" title="Add your Play Store link when live">Google Play — coming soon</span>
+          </div>
+          <p style="margin-top: 1rem; font-size: 0.85rem">
+            Desktop companion for Windows and macOS — direct download when published.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <a href="privacy-policy.html">Privacy policy</a>
+        <a href="privacy-policy.html#contact">Contact</a>
+        <p style="margin-top: 1rem">
+          <a href="mailto:albasti2015mahmoud@gmail.com">albasti2015mahmoud@gmail.com</a>
+        </p>
+        <p style="margin-top: 0.75rem; font-size: 0.8rem">© Fawz · Educational &amp; devotional tool</p>
+      </footer>
+    </div>
   </body>
 </html>
